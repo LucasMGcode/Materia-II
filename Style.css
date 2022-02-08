@@ -1,0 +1,192 @@
+html {
+  overflow-x: hidden;
+  font: 400 1em/1.33 "Lora", serif;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgb(209, 195, 182);
+}
+
+body {
+  padding-bottom: 3em;
+}
+
+.profile {
+  background: url("./M2-3.jpg") left 30%;
+  height: 50vh;
+  background-size: cover;
+}
+@media (min-width: 55em) {
+  .profile {
+    width: 40%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: auto;
+  }
+}
+@media (min-width: 80em) {
+  .profile {
+    width: 50%;
+  }
+}
+
+article {
+  color: #191919;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 55em) {
+  article {
+    margin-left: 40%;
+    position: relative;
+    max-width: 66em;
+  }
+}
+@media (min-width: 80em) {
+  article {
+    margin-left: 50%;
+  }
+}
+
+header {
+  text-align: center;
+  margin: 3em 0em 1.5em 0;
+  padding: 60px 0;
+
+  width: 80%;
+  background: rgba(76, 98, 112, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  border: 2px rgb(224, 178, 121) solid
+}
+
+h1 {
+  font-family: 'Shippori Antique B1', sans-serif;
+  color: rgb(224, 178, 121);
+  text-shadow: 2px 3px rgb(152, 106, 75);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nth-line-1 {
+  font-size: 9vw;
+}
+@media (min-width: 55em) {
+  .nth-line-1 {
+    font-size: 4.5vw;
+  }
+}
+
+.nth-line-2 {
+  font-size: 8vw;
+}
+@media (min-width: 55em) {
+  .nth-line-2 {
+    font-size: 3vw;
+  }
+}
+
+.lead {
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(224, 178, 121);
+  text-shadow: 1.5px 1.5px rgb(152, 106, 75);
+  font-size: 1.5625em;
+  max-width: 20em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  color: white;
+  width: 80%;
+  height: 80px;
+  background: url("https://images.vexels.com/media/users/3/130096/isolated/lists/3530e006d5ab6083b24a1cf19ffa4075-ornamento-divisor-1.png") no-repeat center;
+  margin: 1.5em 0  3em 0;
+}
+
+section {
+  -moz-column-width: 14em;
+       column-width: 14em;
+  -moz-column-gap: 1.33em;
+       column-gap: 1.33em;
+  padding: 0 1em;
+}
+@media (min-width: 55em) {
+  section {
+    padding: 0 3em;
+  }
+}
+
+section p:first-of-type:first-letter {
+  color: rgb(224, 178, 121);
+  float: left;
+  font-size: 7em;
+  line-height: 1;
+  margin-top: -0.2em;
+  margin-bottom: -0.2em;
+  margin-right: 0.1em;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 1.33em;
+  vertical-align: middle;
+}
+
+blockquote {
+  font-family: 'Bebas Neue', cursive;
+  border-left: 0.3em solid rgb(224, 178, 121);
+  border-top: none;
+  border-bottom: none;
+  font-size: 1.953125em;
+  padding: 0.5em 0.5em;
+  line-height: 1;
+  margin-left: 0;
+  margin-right: 0;
+  quotes: "“" "”" "‘" "’";
+  background: rgb(209, 195, 182);
+}
+blockquote::before, blockquote::after {
+  color: #191919;
+  font-size: 1.25em;
+  line-height: 0;
+}
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+@media (min-width: 55em) {
+  blockquote {
+    border-left: 0.2em solid rgb(224, 178, 121);
+    border-top: 0.2em solid rgb(224, 178, 121);
+    border-bottom: 0.2em solid rgb(224, 178, 121);
+    position: absolute;
+    right: 100%;
+    top: 80vh;
+    width: 9em;
+  }
+}
+figure { width: 90%; min-width: 17.5em; margin:0 auto;}
+figcaption { font: 120% sans-serif; text-align: center;}
+.MateriaVideo {
+  position: relative;
+  padding-bottom: 56.25%; 
+  padding-top: 25px;
+  margin:0 auto;
+}
+.MateriaVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
